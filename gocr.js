@@ -1,6 +1,6 @@
 function GOCR(image){
 	Module = {
-		arguments: ['-i', 'in.pnm', '-f', 'UTF8', '--C=0-9']
+		arguments: ['-i', 'in.pnm', '-f', 'UTF8', '-C', '0123456789']
 	}
 	
 	if(image.getContext) image = image.getContext('2d');
